@@ -1,0 +1,64 @@
+.signUpscreen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #f3f2ef;
+  padding-bottom: 50px;
+}
+
+.topIcon {
+  margin-top: 50px;
+}
+
+.topText {
+  font-weight: 400;
+  color: black;
+  margin: 25px 0;
+  text-align: center;
+}
+
+.signupCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+  padding: 25px;
+  border-radius: 10px;
+  width: 400px;
+}
+
+.formLabelSignup {
+  display: block;
+  color: grey;
+  font-size: 14px;
+}
+
+.formInputSignup {
+  border: 1px solid grey;
+  width: 100%;
+  border-radius: 5px;
+  padding: 7px;
+  margin-bottom: 15px;
+}
+
+.signupForm {
+  width: 100%;
+}
+
+.extraText {
+  font-size: 12px;
+  text-align: center;
+  color: grey;
+}
+
+.extraText span {
+  color: blue;
+}
+
+@media screen and (max-width: 700px) {
+  .signupCard {
+    width: 90%;
+  }
+}

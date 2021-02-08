@@ -1,0 +1,26 @@
+.fas::before {
+  font-family: "Font Awesome 5 Free";
+}
+
+.headerOption {
+  color: grey;
+  cursor: pointer;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.headerOption :hover {
+  color: black;
+}
+
+.headerOptionTitle {
+  font-size: 12px;
+}
+.headerOptionTitle i {
+  display: block;
+  font-size: 22px;
+}
+.homeIconTop {
+  border-bottom: 2px solid;
+  color: black;
+}

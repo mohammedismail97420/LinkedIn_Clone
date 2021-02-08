@@ -1,0 +1,113 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 6px 10%;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  border-bottom: 1px solid rgb(234, 234, 234);
+  background-color: white;
+  z-index: 2;
+}
+.leftSide img {
+  width: 50px;
+  margin-right: 50px;
+  border-radius: 50%;
+}
+
+.leftSide {
+  display: flex;
+  align-items: center;
+}
+
+.leftSide input {
+  width: 280px;
+  height: 34px;
+  font-size: 18px;
+  padding: 10px 40px;
+  border-radius: 5px;
+  font-size: 14px;
+  color: black;
+  background: #eef3f8;
+}
+
+.inputDiv {
+  position: relative;
+}
+
+.inputDiv i {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translate(0, -50%) scale(0.7);
+}
+
+.inputDiv i::before {
+  font-family: "Font Awesome 5 Pro";
+}
+
+.rightSide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
+.loginRegBtn {
+  padding: 10px 15px;
+  background-color: blueviolet;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.linkedinLogo {
+  color: #0a66c2;
+  margin-right: 10px;
+}
+
+.headerOptions {
+  display: flex;
+  justify-content: space-around;
+  width: 90%;
+}
+
+@media screen and (max-width: 1000px) {
+  .header {
+    padding: 6px 5%;
+  }
+  .header .rightSide {
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .header {
+    padding: 10px 2%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .header .rightSide {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    z-index: 2;
+    width: 100%;
+    padding: 10px 0;
+  }
+  .header .leftSide {
+    width: 100vw;
+  }
+  .header .leftSide .inputDiv input {
+    width: 85%;
+  }
+  .header .leftSide .inputDiv {
+    width: 100%;
+  }
+  .headerOptions {
+    width: 100%;
+  }
+}

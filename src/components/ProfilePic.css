@@ -1,0 +1,32 @@
+.profileImageDiv img {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+}
+.profileImageDiv p {
+  font-size: 11px;
+  text-align: center;
+  color: grey;
+  margin-top: -5px;
+}
+.profileImageDiv p i {
+  position: relative;
+  top: -2px;
+}
+
+.profileImageDiv p i::before {
+  font-size: 12px;
+  align-self: baseline;
+}
+
+.profileImageDiv {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 700px) {
+  .profileImageDiv {
+    position: fixed;
+    top: 9px;
+    right: 10px;
+  }
+}

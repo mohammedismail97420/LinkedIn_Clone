@@ -1,0 +1,95 @@
+.sidebar {
+  flex: 1.1;
+}
+
+.sidebarProfileCard,
+.recentItemsCard {
+  background: white;
+  border: 1px solid rgb(232, 232, 232);
+  border-radius: 10px;
+  overflow: hidden;
+}
+.cardTop {
+  position: relative;
+}
+.sidebarProfilePic {
+  border-radius: 50%;
+  width: 72px;
+  border: 2px solid white;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%);
+  background-color: white;
+}
+
+.sidebarBanner {
+  width: 100%;
+  height: 50px;
+}
+
+.sidebarName {
+  color: rgb(53, 53, 53);
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.sidebarDesignation {
+  color: grey;
+  text-align: center;
+  font-size: 12px;
+  padding: 10px 25px;
+}
+
+.cardMiddle {
+  margin-top: 50px;
+}
+
+.recentItemsCard {
+  margin-top: 5px;
+  position: sticky;
+  top: 65px;
+}
+
+.recentItemsCard p {
+  font-size: 13px;
+  display: flex;
+  place-items: center;
+  padding: 10px;
+}
+
+.recentItemsCard p:hover {
+  background-color: #ebebeb;
+}
+
+.recentItemsCard p:not(:first-child) {
+  color: grey;
+  cursor: pointer;
+}
+
+.recentItemsCard p:not(:first-child)::before {
+  content: "#";
+  font-size: 21px;
+  align-self: center;
+  padding-right: 5px;
+  font-family: monospace;
+  font-weight: bold;
+}
+
+.recentHeading {
+  color: rgb(85, 84, 84);
+  padding: 10px;
+}
+
+.recentItemsCard p span {
+  font-size: 18px;
+  font-family: cursive;
+  align-self: center;
+}
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    display: none;
+  }
+}

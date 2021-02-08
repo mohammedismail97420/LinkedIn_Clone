@@ -1,0 +1,94 @@
+.loginScreen {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.signInHeading {
+  color: rgba(0, 0, 0, 0.9);
+  font-weight: 600;
+}
+
+.loginCard {
+  width: 400px;
+  -webkit-box-shadow: 0 4px 12px rgb(0 0 0 / 15%);
+  box-shadow: 0 4px 12px rgb(0 0 0 / 15%);
+  padding: 24px 32px 32px;
+  border-radius: 8px;
+  background: #fff;
+}
+
+.loginLogo {
+  margin-bottom: 25px;
+}
+
+.paraText {
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.9);
+  margin: 5px 0 20px;
+}
+
+.loginBtn {
+  background-color: #0073b1;
+  color: white;
+  padding: 15px;
+  border-radius: 50px;
+  margin-top: 20px;
+  display: block;
+  width: 100%;
+}
+
+.formInput {
+  font-size: 18px;
+  display: block;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.9);
+  position: relative;
+  z-index: 1;
+  border-radius: 4px !important;
+  border: 1px solid grey;
+  width: 100%;
+  padding: 10px 15px;
+  margin-bottom: 15px;
+  background: transparent;
+}
+
+.forgotPassword,
+.joinNow {
+  color: #0073b1;
+  font-weight: 500;
+  border-radius: 50px;
+  padding: 5px;
+  margin-left: -5px;
+  text-decoration: none;
+}
+
+.forgotPassword:hover,
+.joinNow:hover {
+  background: #d0e8ff;
+  text-decoration: underline;
+}
+
+.newText {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.loginErrorText {
+  text-align: center;
+  margin-bottom: 20px;
+  background-color: rgb(252, 70, 70);
+  color: white;
+  padding: 10px 0;
+}
+
+@media screen and (max-width: 700px) {
+  .loginCard {
+    box-shadow: none;
+    width: 100%;
+  }
+}

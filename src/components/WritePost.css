@@ -1,0 +1,86 @@
+.postInput {
+  position: relative;
+}
+
+.postContent {
+  flex: 2.5;
+  margin-left: 20px;
+}
+
+.writePost {
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid rgb(232, 232, 232);
+  height: 110px;
+}
+
+.postInput .fa-edit {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-60%);
+  color: rgb(99, 99, 99);
+  font-weight: 400;
+}
+
+.postWriteInput {
+  width: 100%;
+  padding: 15px 20px;
+  border-radius: 50px;
+  padding-left: 50px;
+  border: 1px solid rgb(207, 207, 207);
+  font-size: 14px;
+}
+
+.postWriteInput:hover {
+  background-color: #ebebeb;
+}
+
+.postWriteInput:focus {
+  background-color: white;
+}
+.inputIcons div i {
+  transform: scaleX(-1);
+  padding-left: 5px;
+  margin-top: 2px;
+}
+.inputIcons {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 15px;
+}
+.inputIcons div {
+  display: flex;
+}
+
+.inputIcons div p {
+  font-size: 13px;
+  color: grey;
+  font-weight: 500;
+}
+
+.inputIcons div .fa-image {
+  color: #70b5f9;
+}
+.inputIcons div .fa-video {
+  color: #7fc15e;
+}
+.inputIcons div .fa-calendar-alt {
+  color: #e7a849;
+}
+.inputIcons div .fa-newspaper {
+  color: #f5987e;
+}
+
+.dividerHr {
+  margin: 15px 5px;
+  border-top: 1px solid rgb(206, 206, 206);
+}
+
+@media screen and (max-width: 700px) {
+  .postContent {
+    margin-left: 0;
+    margin-bottom: 30px;
+  }
+}
