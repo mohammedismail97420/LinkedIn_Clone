@@ -7,6 +7,10 @@ import PrivateRoute from "./PrivateRoute";
 import Signup from "./Signup";
 import ForgotPassword from "./ForgotPassword";
 import ProfileInfo from "./ProfileInfo";
+import MyNetwork from "./MyNetwork";
+import Jobs from "./Jobs";
+import Messaging from "./Messaging";
+import Notifications from "./Notifications";
 
 function App() {
   return (
@@ -18,6 +22,10 @@ function App() {
           <Route path="/login" component={Login} />
           <Route path="/forgot-password" component={ForgotPassword} />
           <Route path="/ProfileInfo" component={ProfileInfo} />
+          <Route path="/MyNetwork" component={MyNetwork} />
+          <Route path="/Jobs" component={Jobs} />
+          <Route path="/Messaging" component={Messaging} />
+          <Route path="/Notifications" component={Notifications} />
         </Switch>
       </AuthProvider>
     </Router>

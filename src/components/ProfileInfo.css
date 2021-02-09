@@ -23,6 +23,8 @@
 .backBtn {
   display: flex;
   align-self: flex-start;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 15px;
   cursor: pointer;
 }

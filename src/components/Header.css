@@ -111,3 +111,27 @@
     width: 100%;
   }
 }
+
+a {
+  text-decoration: none;
+}
+.headerOptions a:nth-child(1) .Home {
+  color: black;
+  border-bottom: 2px solid black;
+}
+.headerOptions a:nth-child(2) .MyNetwork {
+  color: black;
+  border-bottom: 2px solid black;
+}
+.headerOptions a:nth-child(3) .Jobs {
+  color: black;
+  border-bottom: 2px solid black;
+}
+.headerOptions a:nth-child(4) .Messaging {
+  color: black;
+  border-bottom: 2px solid black;
+}
+.headerOptions a:nth-child(5) .Notifications {
+  color: black;
+  border-bottom: 2px solid black;
+}

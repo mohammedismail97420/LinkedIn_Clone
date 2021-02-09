@@ -23,18 +23,22 @@ function WritePost() {
   }, []);
 
   const search = (e) => {
+    var dateFormat = require("dateformat");
     var d = new Date();
     if (e.key === "Enter") {
       const msgValue = e.target.value;
-      db.collection("posts").add({
-        name: auth.currentUser.displayName,
-        message: msgValue,
-        photoUrl: auth.currentUser.photoURL,
-        userID: auth.currentUser.uid,
-        timeStamp: d.toLocaleString(),
-      });
-      e.target.value = "";
-      e.target.blur();
+      if (e.target.value !== "") {
+        db.collection("posts").add({
+          name: auth.currentUser.displayName,
+          message: msgValue,
+          photoUrl: auth.currentUser.photoURL,
+          userID: auth.currentUser.uid,
+          timeStamp: dateFormat(d, "dddd, mmmm dS, yyyy, h:MM:ss TT"),
+        });
+
+        e.target.value = "";
+        e.target.blur();
+      }
     }
   };
 

@@ -1,0 +1,26 @@
+.Profile {
+  padding: 15px;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  width: 280px;
+  margin: 25px;
+  display: flex !important;
+  align-items: center;
+  flex-direction: row;
+  justify-content: flex-start !important;
+  flex-wrap: nowrap !important;
+}
+
+.Profile .profileImg {
+  margin-right: 15px;
+}
+
+.Profile .profileText {
+  color: rgb(51, 51, 51);
+  font-size: 14px;
+}
+
+.Profile .profileText div:first-child {
+  font-weight: 500;
+  font-size: 16px;
+  justify-content: flex-start !important;
+}

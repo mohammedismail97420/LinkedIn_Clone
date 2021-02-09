@@ -8,7 +8,7 @@ import "./Dashboard.css";
 export default function Dashboard() {
   return (
     <>
-      <Header />
+      <Header borders="Home" />
       <div className="appBody">
         <Sidebar />
         <WritePost />

@@ -1,9 +1,10 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Header.css";
 import HeaderOption from "./HeaderOption";
 import ProfilePic from "./ProfilePic";
 
-function Header() {
+function Header(borders) {
   return (
     <div>
       <div className="header">
@@ -29,19 +30,41 @@ function Header() {
         </div>
         <div className="rightSide">
           <div className="headerOptions">
-            <HeaderOption title="Home" icon="fas fa-home" home="homeIconTop" />
-            <HeaderOption
-              title="My Network"
-              icon="fas fa-user-friends"
-              home=""
-            />
-            <HeaderOption title="Jobs" icon="fas fa-briefcase" home="" />
-            <HeaderOption
-              title="Messaging"
-              icon="fas fa-comment-dots"
-              home=""
-            />
-            <HeaderOption title="Notifications" icon="fas fa-bell" home="" />
+            <Link to="/">
+              <HeaderOption
+                title="Home"
+                icon="fas fa-home"
+                border={borders.borders}
+              />
+            </Link>
+            <Link to="/MyNetwork">
+              <HeaderOption
+                title="My Network"
+                icon="fas fa-user-friends"
+                border={borders.borders}
+              />
+            </Link>
+            <Link to="/Jobs">
+              <HeaderOption
+                title="Jobs"
+                icon="fas fa-briefcase"
+                border={borders.borders}
+              />
+            </Link>
+            <Link to="/Messaging">
+              <HeaderOption
+                title="Messaging"
+                icon="fas fa-comment-dots"
+                border={borders.borders}
+              />
+            </Link>
+            <Link to="/Notifications">
+              <HeaderOption
+                title="Notifications"
+                icon="fas fa-bell"
+                border={borders.borders}
+              />
+            </Link>
             <ProfilePic />
           </div>
         </div>

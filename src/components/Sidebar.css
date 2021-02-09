@@ -15,6 +15,7 @@
 .sidebarProfilePic {
   border-radius: 50%;
   width: 72px;
+  height: 72px;
   border: 2px solid white;
   position: absolute;
   top: 35%;

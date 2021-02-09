@@ -3,6 +3,7 @@
   margin-top: 47px;
   padding: 50px 10%;
   display: flex;
+  min-height: 90vh;
 }
 
 @media screen and (max-width: 1000px) {

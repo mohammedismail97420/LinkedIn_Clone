@@ -1,9 +1,9 @@
 import React from "react";
 import "./HeaderOption.css";
 
-function HeaderOption({ title, icon, home }) {
+function HeaderOption({ title, icon, border }) {
   return (
-    <div className={"headerOption " + home}>
+    <div className={"headerOption " + border}>
       <span className="headerOptionTitle">
         <i className={icon}></i>
         {title}

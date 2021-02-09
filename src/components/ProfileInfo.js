@@ -23,6 +23,10 @@ export default function ProfileInfo() {
       .doc(auth.currentUser.uid)
       .set({
         designation: msgValue,
+        name: nameRef.current.value,
+        photoURL: photoRef.current.value,
+        email: auth.currentUser.email,
+        uid: auth.currentUser.uid,
       })
       .then(function () {
         user
@@ -67,7 +71,7 @@ export default function ProfileInfo() {
     return auth.signOut();
   };
   const goBack = () => {
-    history.push("/");
+    history.goBack();
   };
 
   return (
@@ -147,6 +151,7 @@ export default function ProfileInfo() {
             />
             <label className="formLabelSignup">Email</label>
             <input
+              disabled
               ref={emailRef}
               defaultValue={auth.currentUser.email}
               className="formInputSignup"

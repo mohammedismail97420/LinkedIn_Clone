@@ -8,6 +8,7 @@
   text-align: center;
   display: flex;
   flex-direction: column;
+  width: 70px;
 }
 .headerOption :hover {
   color: black;
@@ -19,8 +20,4 @@
 .headerOptionTitle i {
   display: block;
   font-size: 22px;
-}
-.homeIconTop {
-  border-bottom: 2px solid;
-  color: black;
 }
