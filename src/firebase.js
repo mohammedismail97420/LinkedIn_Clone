@@ -3,13 +3,12 @@ import "firebase/auth";
 import "firebase/firestore";
 
 const app = firebase.initializeApp({
-  apiKey: "AIzaSyCjzKr4Yfedf-Ux9HxO8bbN1IhLRpNDH0I",
-  authDomain: "linkedin-clone-ismail.firebaseapp.com",
-  projectId: "linkedin-clone-ismail",
-  storageBucket: "linkedin-clone-ismail.appspot.com",
-  messagingSenderId: "1087559926363",
-  appId: "1:1087559926363:web:50d94a4b3be95673b3757e",
-  measurementId: "G-5W2R4HB7NR",
+  apiKey: "AIzaSyBfoqdXH3dKU_m7k6GEFyrkg80-76_dT9A",
+  authDomain: "ismail-linkedin-clone.firebaseapp.com",
+  projectId: "ismail-linkedin-clone",
+  storageBucket: "ismail-linkedin-clone.appspot.com",
+  messagingSenderId: "1011916234346",
+  appId: "1:1011916234346:web:b1c124fb298707e6547413",
 });
 export const db = firebase.firestore();
 db.settings({
